@@ -1,0 +1,27 @@
+Algoritimo: De manha.
+O alarme toca... Voce desperta.
+Se voce nao abrir o olho:
+Continua dormindo. Repetir algoritimo
+Se abre o olho:
+Segue...
+Voce desliga o alarme
+se nao:
+voce enloquece e bate com a cabeca na parede repetidas vezes. Game Over.
+se sim:
+Segue...
+Voce levanta da cama
+se nao:
+entediado, voce volta a dormir
+se sim:
+voce acorda e levanta, seguindo o seu dia.
+
+Proxima decisao:
+Escovar os dentes
+ou
+Sair sem escovar
+
+se: escovar = verdadeiro
+ninguem te julga por ser anti higienico, voce vive o resto do dia feliz
+
+se: escovar = falso
+todos te acham anti higienico e voce fica sozinho pelo resto do dia... :(
