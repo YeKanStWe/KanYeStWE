@@ -1,0 +1,68 @@
+<persistence-unit name="database1">
+
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <class>domain.ClienteJpa</class>
+    <class>domain.ProdutoJpa</class>
+    <class>domain.VendaJpa</class>
+    <class>domain.ProdutoQuantidade</class>
+
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:54321/bancodedados1"/>
+        <property name="javax.persistence.jdbc.user" value="postgres"/>
+        <property name="javax.persistence.jdbc.password" value="0607"/>
+
+        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+    </properties>
+
+</persistence-unit>
+
+<persistence-unit name="database2">
+
+<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+<class>domain.ClienteJpa</class>
+<class>domain.ProdutoJpa</class>
+<class>domain.VendaJpa</class>
+<class>domain.ProdutoQuantidade</class>
+
+<properties>
+    <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+    <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:54321/bancodedados2"/>
+    <property name="javax.persistence.jdbc.user" value="postgres"/>
+    <property name="javax.persistence.jdbc.password" value="0607"/>
+
+    <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+    <property name="hibernate.hbm2ddl.auto" value="update"/>
+    <property name="hibernate.show_sql" value="true"/>
+    <property name="hibernate.format_sql" value="true"/>
+</properties>
+
+</persistence-unit>
+
+<persistence-unit name="database3">
+
+<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+<class>br.com.rpires.domain.jpa.ClienteJpa2</class>
+
+<exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+<properties>
+    <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
+    <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:54321/bancodedados3" /> <!-- BD Mane -->
+    <property name="javax.persistence.jdbc.user" value="admin" /> <!-- DB User -->
+    <property name="javax.persistence.jdbc.password" value="0607" /> <!-- DB Password -->
+
+    <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/> <!-- DB Dialect -->
+    <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
+
+    <property name="hibernate.show_sql" value="true" /> <!-- Show SQL in console -->
+    <property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
+</properties>
+
+</persistence-unit>
