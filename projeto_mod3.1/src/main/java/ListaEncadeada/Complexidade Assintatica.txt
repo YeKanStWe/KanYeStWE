@@ -1,0 +1,5 @@
+push o(n)
+pop o(n)
+insert o(n)
+remove o(n)
+elementAt o(n)

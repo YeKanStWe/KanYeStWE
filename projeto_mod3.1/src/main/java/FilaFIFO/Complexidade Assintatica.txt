@@ -1,0 +1,4 @@
+enqueue o(1)
+dequeue o(1)
+rear o(1)
+front o(1)
