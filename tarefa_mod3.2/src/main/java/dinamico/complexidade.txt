@@ -1,0 +1,2 @@
+tempo O(n elevado ao quadrado)
+espaco O(1)
